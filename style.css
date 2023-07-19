@@ -650,3 +650,21 @@ span {
     transition: .5s;
 }
 
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .blinking-underscore {
+    animation: blink 1s step-end infinite;
+  }
+  
+
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }  
+}
