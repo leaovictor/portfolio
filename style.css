@@ -748,6 +748,70 @@ span {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+
+    .home-imgHover {
+        pointer-events: none;
+        background: black;
+        opacity: .6;
     }
 }
 
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci {
+        width: 160px;
+    }
+
+    .home-sci a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 462px) {
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+
+    .education {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 371px) {
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
